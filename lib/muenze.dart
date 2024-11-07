@@ -1,7 +1,10 @@
-class KlasseMuenze {
+class Muenze {
   // String? bild;
-  double wert;
-  KlasseMuenze(this.wert);
+
+  final int wert;
+
+  const Muenze(this.wert);
+
   void anzeigen() {
     print('Wert: $wert');
   }

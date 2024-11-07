@@ -1,8 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'snackautomat_notifier.dart';
-import 'klasse_snackautomat.dart';
+import 'snack_notifier.dart';
+import 'snack_state.dart';
 
-final snackAutomatenProvider =
-    StateNotifierProvider<SnackAutomatenNotifier, SnackAutomat>((ref) {
-  return SnackAutomatenNotifier();
+final refSnackState = StateNotifierProvider<SnackNotifier, SnackState>((ref) {
+  return SnackNotifier();
 });
